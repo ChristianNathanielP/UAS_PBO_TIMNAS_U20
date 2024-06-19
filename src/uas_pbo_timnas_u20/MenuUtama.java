@@ -4,12 +4,17 @@
  */
 package uas_pbo_timnas_u20;
 
+import Laporan.LaporanInventarisKeluar;
+import Laporan.LaporanInventarisMasuk;
+import java.io.File;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JasperViewer;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 
@@ -80,17 +85,17 @@ public class MenuUtama extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Castellar", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(128, 61, 59));
-        jLabel4.setText("Adam Firdaus - 221401136");
+        jLabel4.setText("Lukman Nur Hakim - 221401074");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Castellar", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(128, 61, 59));
-        jLabel5.setText("Lukman Nur Hakim - 221401136");
+        jLabel5.setText("Adam Muhammad Firdaus - 221401083");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Castellar", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(128, 61, 59));
-        jLabel6.setText("Tri Satria - 221401136");
+        jLabel6.setText("Tri Satria Boang Manalu - 221401054");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -211,10 +216,30 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
+        try {
+            LaporanInventarisMasuk laporanMasuk = new LaporanInventarisMasuk();
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+            String dest = "Laporan Inventaris Masuk - " + timestamp + ".pdf";
+            laporanMasuk.createPdf(dest);
+            JOptionPane.showMessageDialog(this, "Laporan Berhasil di Buat di " + new File(dest).getAbsolutePath(), "Success", JOptionPane.INFORMATION_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Gagal Membuat Laporan: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
+        try {
+            LaporanInventarisKeluar laporanKeluar = new LaporanInventarisKeluar();
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+            String dest = "Laporan Inventaris Keluar - " + timestamp + ".pdf";
+            laporanKeluar.createPdf(dest);
+            JOptionPane.showMessageDialog(this, "Laporan Berhasil di Buat di " + new File(dest).getAbsolutePath(), "Success", JOptionPane.INFORMATION_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Gagal Membuat Laporan: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed

@@ -14,7 +14,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.BaseFont;
-import uas_pbo_timnas_u20.InventarisKeluar; // Pastikan ini diimpor dengan benar
+import uas_pbo_timnas_u20.InventarisKeluar; 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;

@@ -222,7 +222,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="3b" green="3d" red="80" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Adam Firdaus - 221401136"/>
+        <Property name="text" type="java.lang.String" value="Lukman Nur Hakim - 221401074"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -238,7 +238,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="3b" green="3d" red="80" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Lukman Nur Hakim - 221401136"/>
+        <Property name="text" type="java.lang.String" value="Adam Muhammad Firdaus - 221401083"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -254,7 +254,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="3b" green="3d" red="80" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Tri Satria - 221401136"/>
+        <Property name="text" type="java.lang.String" value="Tri Satria Boang Manalu - 221401054"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
